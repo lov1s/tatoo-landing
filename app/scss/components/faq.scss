@@ -22,6 +22,9 @@
 
 .faq__collapsible {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--grey);
     color: var(--black);
     cursor: pointer;
@@ -32,19 +35,21 @@
     outline: none;
     font-size: rem(16);
 }
-.faq__collapsible::after{
-    content: "";
-    display: block;
-    background: url("/assets/tattoo-machine.png") no-repeat;
-    width: 24px;
-    height: 24px;
-    float: right;
-    margin: 0 rem(6) 0 0;
+.faq__collapsible svg{
+    stroke: var(--black);
 }
 
 .faq__active,
 .faq__collapsible:hover {
-    background-color: var(--accent);
+    background-color: var(--black);
+    color: var(--white);
+}
+.faq__collapsible:hover > svg{
+    stroke: var(--white);
+}
+.faq__active svg{
+    transform: rotate(180deg);
+    transition: transform 330ms ease-in-out;
 }
 
 @-webkit-keyframes faq__active {
@@ -125,7 +130,9 @@
 .faq__content li {
     padding-bottom: rem(12);
 }
-
+.faq__wrapper{
+    margin: rem(24);
+}
 @media screen and (max-width: 768px){
     .faq__list {
         grid-template-columns: repeat(1, 1fr);

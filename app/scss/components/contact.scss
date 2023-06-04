@@ -83,25 +83,24 @@
 
 .tatoo__submit {
     padding: rem(10) rem(16);
-    color: var(--black);
+    color: var(--white);
     border: 1px solid var(--black);
-    background-color: var(--white);
+    background-color: var(--black);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .tatoo__submit:hover {
-    color: var(--white);
-    background-color: var(--black);
+    opacity: 0.8;
 }
 
 .file-label {
     display: block;
-    background-color: var(--white);
+    background-color: var(--black);
     padding: rem(10) rem(16);
     border: 1px solid var(--black);
     border-radius: 5px;
-    color: var(--black);
+    color: var(--white);
     height: auto;
     max-width: rem(120);
     margin-top: rem(24);
@@ -112,14 +111,12 @@
 
 .file-label:hover,
 .file-label:hover {
-    color: var(--white);
-    background-color: var(--black);
+    opacity: 0.8;
 }
 
 .file-label:active,
 .file-label:active {
-    color: var(--white);
-    background-color: var(--black);
+    opacity: 0.8;
 }
 
 .tatoo__form ol {
