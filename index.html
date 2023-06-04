@@ -27,7 +27,8 @@
                     <li class="sidenav__item"><a class="sidenav__link" href="#faq">FAQ</a></li>
                     <li class="sidenav__item"><a class="sidenav__link" href="#portfolio">Portfolio</a></li>
                     <li class="sidenav__item"><a class="sidenav__link" href="#getLinked">Get inked</a></li>
-                    <li class="sidenav__item instagram__link"><a href="#">@Vlr.ink</a></li>
+                    <li class="sidenav__item instagram__link"><a href="https://www.instagram.com/vlr.ink/">@vlr.ink</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -77,19 +78,17 @@
                                     <button type="button" class="faq__collapsible">How I work</button>
                                     <div class="faq__content">
                                         <ul>
-                                            <li>I DON'T TATTOO :
-                                                RIBS; FEET, BELLY</li>
-                                            <li>YOU WILL NOT RECEIVE YOUR DESIGN BEFORE THE APPOINTMENT - IT WILL BE
-                                                DESIGNED ON THE DAY OF THE APPOINTMENT AND DISCUSSED WITH YOU AND
-                                                FURTHER
-                                                DEVELOPED UNTIL IT IS PERFECT FOR YOU</li>
-                                            <li>ON THE DAY OF THE APPOINTMENT WE HAVE ENOUGH TIME TO DISCUSS EVERYTHING
-                                                AND
-                                                TO FIND THE RIGHT SIZE & PLACEMENT FOR YOU - SO THAT YOUR TATTOO FITS
-                                                PERFECTLY TO YOU AND YOUR BODY</li>
-                                            <li>YOU CAN BRING 1 PERSON TO YOUR APPOINTMENT</li>
-                                            <li>I USE VEGAN INK - EXCLUSIVELY BLACK</li>
-                                            <li>YOU HAVE TO AT LEAST BE 18 YEARS OLD</li>
+                                            <li>I don't tattoo :
+                                                ribs; feet, belly</li>
+                                            <li>You will not receive your design before the appointment - it will be
+                                                designed on the day of the appointment and discussed with you and
+                                                further
+                                                developed until it is perfect for you</li>
+                                            <li>On the day of the appointment we have enough time to discuss everything
+                                                and
+                                                to find the right size & placement for you - so that your tattoo fits
+                                                perfectly to you and your body</li>
+                                            <li>You can bring 1 person to your appointment</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -152,7 +151,8 @@
             <section id="getLinked" class="contact">
                 <div class="contact__container">
                     <h2 class="contact__title">Booking</h2>
-                    <form action="https://formsubmit.co/artem.boss619@gmail.com" method="POST" class="tatoo__form">
+                    <form action="https://formsubmit.co/vlr.tattooing@gmail.com" method="POST"
+                        enctype="multipart/form-data" class="tatoo__form">
                         <label for="fsubject" class="tatoo__label">Full name <span>(required)</span></label>
                         <input class="tatoo__input" type="text" id="fsubject" name="fsubject"
                             placeholder="Please use your full name as the subject" required>
@@ -182,6 +182,16 @@
                         <textarea class="tatoo__message" name="fmessage_tatoo" id="fmessage_tatoo" cols="50" rows="8"
                             placeholder="Please provide a brief explanation alongside any notes or preferences you may have."
                             required></textarea>
+                        <div>
+                            <label class="tatoo__label">References <span>(required)</span></label>
+                            <div class="preview">
+                                <p>Please upload a few photos of your tattoo idea (jpeg, png or webp format)</p>
+                            </div>
+                            <label for="attachment" class="tatoo__label file-label">Upload</label>
+                            <input type="file" id="attachment" name="attachment"
+                                accept="image/png, image/jpeg, image/webp">
+                        </div>
+                        
                         <label for="fplacement" class="tatoo__label">Placement <span>(required)</span></label>
                         <input class="tatoo__input" type="text" id="fplacement" name="fplacement"
                             placeholder="eg: inner forearm " required>
@@ -189,11 +199,10 @@
                         <input class="tatoo__input" type="number" id="fsize" name="fsize" placeholder="eg: 15 - 20 cm"
                             required>
                         <label for="fcity" class="tatoo__label">Location (city) <span>(required)</span></label>
-                        <input class="tatoo__input" type="text" id="fcity" name="fcolor" placeholder="eg: black"
-                            required>
-                        <label for="fbuget" class="tatoo__label">Budget <span>(required)</span></label>
+                        <input class="tatoo__input" type="text" id="fcity" name="fcolor" required>
+                        <!-- <label for="fbuget" class="tatoo__label">Budget <span>(required)</span></label>
                         <input class="tatoo__input" type="text" id="fbuget" name="fbuget"
-                            placeholder="eg: No set budget" required>
+                            placeholder="eg: No set budget" required> -->
                         <label for="fdate" class="tatoo__label">Preferred date/week/month/day of the week
                             <span>(required)</span></label>
                         <input class="tatoo__input" type="text" id="fdate" name="fdate"

@@ -1,28 +1,34 @@
 @use '../util' as *;
 
-.contact{
+.contact {
     margin-top: rem(60);
 }
-.contact__title{
+
+.contact__title {
     margin-left: rem(24);
     font-size: rem(42);
 }
-.tatoo__form{
+
+.tatoo__form {
     padding: rem(24);
 }
-.tatoo__label{
+
+.tatoo__label {
     font-size: rem(18);
     font-weight: 600;
 }
-.tatoo__label span{
+
+.tatoo__label span {
     color: #989ba5;
     font-size: rem(12);
 }
-.tatoo__label-sub{
+
+.tatoo__label-sub {
     font-size: rem(14);
     font-weight: 500;
 }
-.tatoo__input{
+
+.tatoo__input {
     width: 100%;
     margin-top: rem(14);
     margin-bottom: rem(24);
@@ -30,29 +36,34 @@
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
-.tatoo__name{
+
+.tatoo__name {
     display: flex;
     justify-content: space-between;
     margin-top: rem(18);
 }
-.tatoo__first{
+
+.tatoo__first {
     width: 50%;
     margin-right: rem(24);
 }
-.tatoo__last{
+
+.tatoo__last {
     width: 50%;
 }
-.tatoo__checkbox_wrap{
+
+.tatoo__checkbox_wrap {
     display: block;
     margin-top: rem(14);
     margin-bottom: rem(24);
     cursor: pointer;
 }
-.tatoo__checkbox{
+
+.tatoo__checkbox {
     margin-right: rem(8);
 }
 
-.tatoo__message{
+.tatoo__message {
     display: block;
     margin-top: rem(14);
     margin-bottom: rem(24);
@@ -62,13 +73,15 @@
     resize: none;
 }
 
-.tatoo__wrap{
+.tatoo__wrap {
     margin: rem(24) 0;
 }
-.tatoo__wrap .tatoo__checkbox{
+
+.tatoo__wrap .tatoo__checkbox {
     margin-left: rem(12);
 }
-.tatoo__submit{
+
+.tatoo__submit {
     padding: rem(10) rem(16);
     color: var(--black);
     border: 1px solid var(--black);
@@ -76,13 +89,63 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.tatoo__submit:hover{
+
+.tatoo__submit:hover {
     color: var(--white);
     background-color: var(--black);
 }
 
-@media screen and (max-width: 768px){
-    .tatoo__message{
+.file-label {
+    display: block;
+    background-color: var(--white);
+    padding: rem(10) rem(16);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    color: var(--black);
+    height: auto;
+    max-width: rem(120);
+    margin-top: rem(24);
+    text-align: center;
+    font-size: rem(14);
+    cursor: pointer;
+}
+
+.file-label:hover,
+.file-label:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.file-label:active,
+.file-label:active {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.tatoo__form ol {
+    padding-left: 0;
+}
+
+.tatoo__form img {
+    height: 64px;
+    order: 1;
+}
+
+.tatoo__form li  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tatoo__message {
         max-width: 300px;
+    }
+    .tatoo__form li  {
+        flex-direction: column;
+    }
+    .tatoo__form img{
+        max-width: rem(320);
     }
 }
